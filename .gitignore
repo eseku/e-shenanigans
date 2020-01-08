@@ -35,7 +35,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-src/posts/
+./src/posts/
 
 # Typescript v1 declaration files
 typings/
@@ -53,7 +53,7 @@ typings/
 *.tgz
 
 # dotenv environment variable files
-.env*
+# .env*
 
 # gatsby files
 .cache/
