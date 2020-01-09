@@ -35,18 +35,16 @@ const Blog = (props) => {
     const options = {
         renderNode: {
             "embedded-asset-block": (node) => {
-                // const alt = node.data.target.fields.title
-                // const url = ''
-                // return <img /*alt={alt}*/ src={url} />
+                const alt = node.data.target.fields && node.data.target.fields.title["en-US"]
+                const url = node.data.target.fields && node.data.target.fields.file["en-US"].url
+
+                return <img alt={alt} src={url} />
             }
         }
     }
 
     return (
         <Layout>
-            {/* <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-            <p>{props.data.markdownRemark.frontmatter.date}</p>
-            <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div> */}
             <h1>{props.data.contentfulBlogPost.title}</h1>
             <p>{props.data.contentfulBlogPost.publishedDate}</p>
             {documentToReactComponents(props.data.contentfulBlogPost.postBody.json, options)}
