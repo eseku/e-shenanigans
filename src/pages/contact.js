@@ -6,9 +6,11 @@ import Head from '../components/head'
 const ContactPage = () => (
     <Layout>
         <Head title="Contact" />
-        <h1>This is my contact page </h1>
-        <p>Email me at joojoquartey11@gmail.com</p>
-        <p>You can reach me on
+        <h1 style={{ color: `grey` }}>Contact </h1>
+        <p>
+            <a href="mailto: joojoquartey11@gmail.com">Send Me An Email</a>
+        </p>
+        <p>or you can reach me on
             <a
                 href="https://twitter.com/esekuu"
                 target="_blank"

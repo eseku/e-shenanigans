@@ -2,20 +2,45 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Head from '../components/head'
+import IndexStyles from '../styles/index.module.scss'
 
 
 const indexPage = () => (
     <>
         <Layout>
             <Head title="Home" />
-            <h1>Hello.</h1>
-            <h2>I'm Joojo, a full stack developer living in Accra, Ghana</h2>
-            <p>
-                Why all this? I'm a builder. That's what i do. Essentially bringing life to things.
-                This is probably why i love software technology as at its core is putting pieces together to
-                engineer full working robust systems
+            <h1
+                className={IndexStyles.hello}
+            >
+                Hello.
+            </h1>
+
+            <p
+                className={IndexStyles.paragraph}
+            >
+                I am Joojo, a passionate and learning
+                <span
+                    className={IndexStyles.bold}
+                >
+                    software engineer.
+                </span>
+
+                <br />
+                This is my
+
+                <Link
+                    to="/blog"
+                    className={IndexStyles.link}
+                >
+                    blog.
+                </Link>
             </p>
-            <p>Need a developer? <Link to="/contact">Contact Me</Link></p>
+
+            <p
+                className={IndexStyles.paragraph}
+            >
+
+            </p>
         </Layout>
     </>
 )

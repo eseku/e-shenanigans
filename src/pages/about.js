@@ -7,12 +7,13 @@ const AboutPage = () => (
     <>
         <Layout >
             <Head title="About" />
-            <h1> This is some shit about me </h1>
-            <h3>
-                <Link to="/contact">
-                    Anyways contact me nairamarley@yahoo.com
-            </Link>
-            </h3>
+
+            <h4>
+                I'm a builder. It's what i love to do, essentially bringing life to things.
+                This is probably why i love software technology, as at its core
+                is engineering full working robust systems
+            </h4>
+
         </Layout>
     </>
 )
