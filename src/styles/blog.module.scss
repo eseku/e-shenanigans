@@ -30,3 +30,24 @@
     }
 
 }
+
+.code {
+    text-decoration: none;
+    color: white /*#9C079C*/;
+    background: black;
+    padding: 1rem;
+    display: block;
+    border-radius: .2rem;
+    font-weight: 700;
+}
+
+.date {
+    font-size: small;
+    color: grey;
+}
+
+.link {
+    color: #9C079C;
+    font-weight: 500;
+    text-decoration: none;
+}
