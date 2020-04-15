@@ -24,7 +24,9 @@ const Blog = (props) => {
 
     const options = {
         renderMark: {
-            [MARKS.CODE]: text => <code className={code} >{text}</code>,
+            [MARKS.CODE]: (text) => {
+                return<code className={code} >{text}</code>
+            },
         },
         renderNode: {
             "embedded-asset-block": (node) => {
